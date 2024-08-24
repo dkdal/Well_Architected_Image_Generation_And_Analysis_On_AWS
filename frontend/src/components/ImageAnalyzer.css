@@ -1,0 +1,117 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #ecf0f1;
+    --accent-color: #3498db;
+    --error-color: #e74c3c;
+    --button-color: #2980b9;
+    --button-hover-color: #1abc9c;
+    --input-border-color: #bdc3c7;
+    --loading-color: #f39c12;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+  
+  .analyzer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1rem;
+    background-color: var(--primary-color);
+  }
+  
+  .analyzer-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 1rem;
+  }
+  
+  .url-input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid var(--input-border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    color: var(--primary-color);
+  }
+  
+  .analyze-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--button-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .analyze-button:hover {
+    background-color: var(--button-hover-color);
+  }
+  
+  .analyze-button:disabled {
+    background-color: var(--input-border-color);
+    cursor: not-allowed;
+  }
+  
+  .error-message {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: var(--error-color);
+  }
+  
+  .result-container {
+    margin-top: 1.5rem;
+    max-width: 100%;
+    text-align: left;
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .result-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+  }
+  
+  .result-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .result-table th,
+  .result-table td {
+    border: 1px solid var(--input-border-color);
+    padding: 0.5rem;
+    text-align: left;
+  }
+  
+  .result-table th {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+  }
+  
+  .result-table td {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+  }
+  
